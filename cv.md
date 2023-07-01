@@ -56,5 +56,5 @@ I have some pet projects
   - [The Odin Project (Foundations Course completed, Full Stack JavaScript in progress)](https://www.theodinproject.com/paths)
   - [Front-End Self-Paced Online Program Intermediate Level](https://learn.epam.com/)
 
-### English: 
+## English: 
 **B2** (Finished Essential Grammar in Use and English Grammar in Use books)
