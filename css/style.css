@@ -23,6 +23,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100%;
   min-height: 100vh;
@@ -152,11 +156,96 @@ aside ul li {
 main {
   margin-left: 30vw;
   width: 70vw;
-  padding-top: 150em;
-  background-color: #202020;
-  /* height: 100px; */
+  padding: 0 2em;
 }
 
+section {
+  padding-top: 4em;
+}
+
+#about {
+  padding-top: 5em;
+}
+main h2, main p {
+  line-height: 1.5em;
+}
+main p, main ul {
+  margin-left: 1em;
+}
+main ul {
+  list-style: none;
+  line-height: 2.4em;
+}
+
+main ul li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+main ul li::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.html::before {
+  background-image: url('../icons/html5.svg');
+}
+.css::before {
+  background-image: url('../icons/css3.svg');
+}
+.sass::before {
+  background-image: url('../icons/sass.svg');
+}
+.bootstrap::before {
+  background-image: url('../icons/bootstrap.svg');
+}
+.tailwind::before {
+  background-image: url('../icons/tailwind-css.svg');
+}
+.js::before {
+  background-image: url('../icons/javascript.svg');
+}
+.react::before {
+  background-image: url('../icons/react.svg');
+}
+.graph::before {
+  background-image: url('../icons/graphql.svg');
+}
+.figma::before {
+  background-image: url('../icons/figma.svg');
+}
+.git::before {
+  background-image: url('../icons/git.svg');
+}
+.github-icon::before {
+  background-image: url('../icons/github.svg');
+}
+
+.cards-list {
+  padding: 24px;
+  background-color: #202020;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #e9e9e9;
+  border-radius: 12px;
+  width: 45%;
+  min-width: 300px;
+  height: 100px;
+}
 
 /* FOOTER */
 footer .rsschool {
