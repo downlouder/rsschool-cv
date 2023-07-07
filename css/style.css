@@ -3,6 +3,7 @@
   --light-dark: #555555;
   --gray: #7b7b7b;
   --light-blue: #DFF3F9;
+  --white: #f2f2f2;
   --xl: 1400px;
   --l: 900px;
   --m: 640px;
@@ -172,7 +173,7 @@ main h2, main p {
 main p, main ul {
   margin-left: 1em;
 }
-main ul {
+#skills ul {
   list-style: none;
   line-height: 2.4em;
 }
@@ -183,7 +184,7 @@ main ul li {
   font-size: 18px;
 }
 
-main ul li::before {
+#skills ul li::before {
   content: '';
   display: inline-block;
   width: 32px;
@@ -230,9 +231,7 @@ main ul li::before {
 
 .cards-list {
   padding: 24px;
-  background-color: #202020;
   width: 100%;
-  min-height: 200px;
   display: flex;
   justify-content: center;
   gap: 2em;
@@ -240,11 +239,60 @@ main ul li::before {
 }
 
 .card {
-  background-color: #e9e9e9;
+  background-color: #f6f6f6;
   border-radius: 12px;
-  width: 45%;
+  width: 46%;
   min-width: 300px;
-  height: 100px;
+  position: relative;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+.card img {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+.card div {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  border-radius: 0 0 12px 12px;
+  padding: 12px 16px;
+  width: 100%;
+  color: #f2f2f2;
+  background-color: #202020;
+}
+
+.card div h4 {
+  font-size: 24px;
+}
+
+#experience p {
+  font-size: 20px;
+}
+
+#education h4, #education ul {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+ul ul {
+  list-style: circle;
+}
+
+#languages {
+  margin-bottom: 4em;
+}
+.languages-list {
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.language h4 {
+  font-size: 20px;
+}
+.language p {
+  font-size: 16px;
+  margin-left: 0;
 }
 
 /* FOOTER */
