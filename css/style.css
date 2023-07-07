@@ -26,6 +26,7 @@
 body {
   height: 100%;
   min-height: 100vh;
+  color: var(--dark);
 }
 
 a {
@@ -55,6 +56,35 @@ h1 {
   padding: 0 20px;
 }
 
+.normal-weight {
+  font-weight: 400;
+}
+.anim-point {
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.anim-point:hover {
+  color: var(--light-dark);
+}
+
+.arrow {
+  position: fixed;
+  bottom: 5vh;
+  right: 3vw;
+  z-index: 10;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow svg {
+  height: 42px;
+}
+
 /* HEADER */
 header {
   background-color: var(--light-blue);
@@ -74,7 +104,7 @@ header > div {
 header nav {
   font-size: 1.2em;
   display: flex;
-  gap: 2em;
+  gap: 1.2em;
 }
 
 nav > a:hover {
@@ -94,24 +124,35 @@ aside {
   padding-bottom: 4em;
   width: 30vw;
   height: 100vh;
+  padding: 5em 2em 4em;
   position: fixed;
   z-index: 3;
-  background-color: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-aside img {
+aside > img {
+  margin: 0.5em 0 1em;
   border-radius: 50%;
-  width: 50%;
+  width: 80%;
+}
+aside > div {
+  line-height: 2em;
+}
+aside ul {
+  line-height: 1.8em;
+}
+aside ul li {
+  margin-left: 1.5em;
+  list-style-type: none;
 }
 
 /* MAIN */
 main {
   margin-left: 30vw;
   width: 70vw;
-  padding-top: 250em;
+  padding-top: 150em;
   background-color: #202020;
   /* height: 100px; */
 }
