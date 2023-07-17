@@ -122,6 +122,7 @@ nav a:active {
 
 .main-content {
   display: flex;
+  position: relative;
 }
 
 /* ASIDE */
@@ -129,6 +130,7 @@ aside {
   padding-top: 5em;
   padding-bottom: 4em;
   width: 30vw;
+  max-width: 460px;
   height: 100vh;
   padding: 5em 2em 4em;
   position: fixed;
@@ -156,7 +158,8 @@ aside ul li {
 
 /* MAIN */
 main {
-  margin-left: 30vw;
+  margin-left: 34%;
+  max-width: 900px;
   width: 70vw;
   padding: 0 2em;
 }
